@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - JHAMES RENYL M. RAGOJO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    header {
+      background: #000;
+      color: #000000;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 50px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .logo-container img:hover {
+      transform: scale(1.1);
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 700;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #FF4081;
+    }
+
+    main {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p.subtitle {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 3rem;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px rgba(255, 64, 129, 0.4);
+    }
+
+    .project-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .project-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.75);
+      color: #fff;
+      padding: 1rem;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover .project-overlay {
+      transform: translateY(0);
+    }
+
+    .project-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .project-desc {
+      font-size: 1rem;
+      color: #ccc;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Logo">
+    </div>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="portfolio.html">PORTFOLIO</a>
+      <a href="services.html">SERVICES</a>
+      <a href="contacts.html">CONTACTS</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>My Portfolio</h1>
+    <p class="subtitle">Crafted with code, built with passion.</p>
+
+    <div class="portfolio-grid">
+      <div class="project-card">
+        <img src="images/1stproject.jpg" alt="Project 1">
+        <div class="project-overlay">
+          <div class="project-title">UI/UX Dev</div>
+          <div class="project-desc">Ux/Ui designing Optimizing player experience</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/2ndproject.png" alt="Project 2">
+        <div class="project-overlay">
+          <div class="project-title">Apocalypse SMP Server</div>
+          <div class="project-desc">A custom Minecraft SMP vanilla survival chaos.</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/3rdproject.gif" alt="Project 3">
+        <div class="project-overlay">
+          <div class="project-title">GameDev Demo</div>
+          <div class="project-desc">An immersive 2D game built in Unity focused on story-driven action.</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/4thproject.gif" alt="Project 4">
+        <div class="project-overlay">
+          <div class="project-title">Animated Char</div>
+          <div class="project-desc">A clean and Aesthetic animated Chars.</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 JHAMES RENYL M. RAGOJO | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

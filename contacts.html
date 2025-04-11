@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - JHAMES RENYL M. RAGOJO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 50px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .logo-container img:hover {
+      transform: scale(1.1);
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 700;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #FF4081;
+    }
+
+    main {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info {
+      margin-bottom: 3rem;
+    }
+
+    .contact-info p {
+      font-size: 1.2rem;
+      color: #555;
+      margin: 1rem 0;
+    }
+
+    .contact-info a {
+      color: #FF4081;
+      text-decoration: none;
+      font-size: 1.2rem;
+      margin: 0.5rem;
+      display: inline-block;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      color: #e60073;
+    }
+
+    .contact-form {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .contact-form .left-side,
+    .contact-form .right-side {
+      flex: 1;
+    }
+
+    .contact-form .left-side input,
+    .contact-form .right-side textarea {
+      width: 100%;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      border: 2px solid #ddd;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .contact-form .left-side input:focus,
+    .contact-form .right-side textarea:focus {
+      border-color: #2e2e2e;
+    }
+
+    .contact-form button {
+      padding: 1rem 2rem;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+      max-width: 600px;
+      margin-top: 1rem;
+    }
+
+    .contact-form button:hover {
+      background-color: #555;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Logo">
+    </div>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="portfolio.html">PORTFOLIO</a>
+      <a href="services.html">SERVICES</a>
+      <a href="contacts.html">CONTACTS</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>CONTACTS</h1>
+    <div class="contact-info">
+      <p>Get in touch with me via social media or just send me a direct email:</p>
+      <div>
+        <a href="https://www.facebook.com/jhames.rg" target="_blank"><img src="images/facebook.png" alt="Facebook" style="width: 24px; height: 24px;"> Facebook</a>
+        <a href="https://discord.com/j.chillrg" target="_blank"><img src="images/discord.png" alt="Discord" style="width: 24px; height: 24px;"> Discord</a>
+        <a href="mailto:rgjhames@gmail.com"><img src="images/gmail.png" alt="Gmail" style="width: 24px; height: 24px;"> rgjhames@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <div class="left-side">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+      </div>
+
+      <div class="right-side">
+        <textarea placeholder="Your Message" rows="6" required></textarea>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <button type="submit">Send Message</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 JHAMES RENYL M. RAGOJO | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
